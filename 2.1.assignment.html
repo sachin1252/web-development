@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8146786d3.js" crossorigin="anonymous"></script>
+    <title>assignment create profile using flex and inline block</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color:rgb(219, 213, 213);
+        gap: 3px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 13%;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        margin-left: 4px;
+        border-radius: 4px;
+    }
+
+    #profile {
+        display: inline;
+        width: 10vw;
+    }
+
+    .about {
+        margin-left: 1em;
+    }
+
+    .img {
+        margin-left: 1em;
+    }
+
+    ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    #name {
+        display: inline-block;
+        position: relative;
+        top: 15px;
+        left: 20px;
+
+        color: black;
+    }
+
+    .skill {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .bar {
+        text-align: center;
+        border-radius: 6px;
+    }
+
+    .language {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 85%;
+        border-radius: 3px;
+
+
+
+    }
+
+    .exp {
+        margin-left: 6px;
+        width: 85%;
+        background-color: white;
+    }
+    #experience{
+        margin-left: 9px;
+    }
+
+    .bottom-right {
+        width: 85%;
+        justify-content: space-between;
+        background-color: white;
+
+        border-radius: 5px;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+
+            <div class="img">
+                <img id="profile" src="sachin1.jpg" alt="">
+                <h4 id="name"><b>Sachin Singhal </b></h4>
+            </div>
+            <br><br>
+            <div class="about">
+                <ul>
+                    <li><i class="fa-solid fa-briefcase"></i> Developer</li>
+                    <li><i class="fa-solid fa-building"></i> New Delhi,India</li>
+                    <li><i class="fa-solid fa-envelope"></i> example00.gmail.com</li>
+                    <li><i class="fa-solid fa-phone-volume"></i> 011-3627282829</li>
+                </ul>
+            </div>
+            <br><br>
+
+            <div class="skill">
+                <p id="skill"><b><i class="fa-solid fa-gears"></i></b>Skills</p><br>
+                <ul>
+                    <li>HTML</li>
+                    <div class="bar" style="background-color:lightgreen; height:15px;width:70%;">70%</div>
+                    <li>JAVA</li>
+                    <div class="bar" style="background-color:lightgreen; height:15px;width:80%;">80%</div>
+                    <li>DATA STRUCTURE</li>
+                    <div class="bar" style="background-color: lightgreen; height:15px;width:50%;">50%</div>
+                    <li>DBMS</li>
+                    <div class="bar" style="background-color: lightgreen; height:15px;width:85%;">85%</div>
+                </ul>
+            </div>
+            <br><br>
+
+            <div class="language">
+                <p id="language"><i class="fa-solid fa-globe"></i> Language</p><br>
+                <ul>
+                <li>ENGLISH</li>
+                <div class="bar" style="background-color:lightgreen; height:15px;width:90%;">90%</div>
+                <li>HINDI</li>
+                <div class="bar" style="background-color:lightgreen; height:15px;width:100%;">100%</div>
+                <li>GERMAN</li>
+                <div class="bar" style="background-color:lightgreen; height:15px;width:70%;">70%</div>
+            </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="exp">
+                <h2><i id="experience" class="fa-solid fa-briefcase"></i> Work Experience</2><br><br>
+                    <h3 id="experience">Frontend Diveloper</h3><br>
+
+                    <br>
+                    <h4 id="experience"><i class="fa-regular fa-calendar-days"></i> <span style="color: rgba(5, 150, 5, 0.697);">June
+                            2015</span> <span
+                            style="background-color:rgb(125, 201, 125); border-radius: 4px;">current</span> </h4>
+
+                    <p id="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos pariatur cupiditate
+                        voluptatibus quaerat est, aliquid reprehenderit officia similique atque et, delectus a aut odio,
+                        commodi quis rem eum sequi.</p>
+                    <br>
+                    <hr>
+
+                    <h3 id="experience">Web Diveloper</h3><br>
+
+                    <br>
+                    <h4 id="experience"><i class="fa-regular fa-calendar-days"></i> <span style="color: rgb(5, 150, 5, 0.697) ;">March
+                            2012 - Dec 2014</span> </h4>
+
+                    <p id="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos pariatur cupiditate
+                        voluptatibus quaerat est, aliquid reprehenderit officia similique atque et, delectus a aut odio,
+                        commodi quis rem eum sequi.</p>
+                    <br>
+                    <hr>
+
+                    <h3 id="experience">Graphics Diveloper</h3><br>
+
+                    <br>
+                    <h4 id="experience"><i class="fa-regular fa-calendar-days"></i> <span style="color: rgb(5, 150, 5, 0.697) ;">March
+                            2010 - April 2012</span> </h4>
+
+                    <p id="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quos pariatur cupiditate
+                        voluptatibus quaerat est, aliquid reprehenderit officia similique atque et, delectus a aut odio,
+                        commodi quis rem eum sequi.</p>
+                    <br>
+            </div>
+
+
+            <div class="bottom-right">
+                <h2 id="experience"> <i class="fa-sharp fa-solid fa-book"></i> Education</h2><br><br>
+                <h4 id="experience">W3SCHOOLS</h4><br>
+                <h4 id="experience"><i class="fa-regular fa-calendar-days"></i> <span style="color: rgb(5, 150, 5, 0.697) ;">Forever</span> </h4><br>
+                    <p id="experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facilis laborum tempore incidunt quas aspernatur eveniet sit, saepe fugit, soluta quaerat quasi assumenda quia vitae ex ullam, eligendi nesciunt pariatur!</p>
+                    
+                    <hr>
+
+                    <h4 id="experience">SCHOOL OF CODING</h4><br>
+                    <h4 id="experience"><i class="fa-regular fa-calendar-days"></i> <span style="color: rgb(5, 150, 5, 0.697) ;">2013 - 2016</span> </h4><br>
+                        <p id="experience"> Bachelor Degree</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
